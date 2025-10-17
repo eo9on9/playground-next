@@ -1,17 +1,19 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+import { css } from '@emotion/react'
+
+import styles from '@/styles/Home.module.css'
+import { Geist, Geist_Mono } from 'next/font/google'
+import Head from 'next/head'
+import Image from 'next/image'
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
+})
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
+})
 
 export default function Home() {
   return (
@@ -22,6 +24,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div
+        css={css`
+          background-color: red;
+        `}
+      >
+        <h1>Hello World</h1>
+      </div>
       <div
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
@@ -113,5 +122,5 @@ export default function Home() {
         </footer>
       </div>
     </>
-  );
+  )
 }

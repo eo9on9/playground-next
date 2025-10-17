@@ -37,6 +37,8 @@ export default [
       'prettier/prettier': 'error',
       /** import React 룰 끔 */
       'react/react-in-jsx-scope': 'off',
+      /** emotion css 속성을 무시 */
+      'react/no-unknown-property': ['error', { ignore: ['css'] }],
     },
   },
 
