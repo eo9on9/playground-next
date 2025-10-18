@@ -1,4 +1,4 @@
-import { request } from '../lib/request'
+import { request } from './request'
 
 export type SignupRequest = {
   id: string
