@@ -4,4 +4,4 @@
 
 ## 환경
 
-React, TypeScript, Next.js, Emotion, Jest
+React, TypeScript, Next.js, Emotion, Jest, Axios, React Hook Form, Zod
